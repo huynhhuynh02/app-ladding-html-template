@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        if($(this).scrollTop()>300){
+        if($(this).scrollTop()>200){
             $('.header').addClass("sticky");
         }else{
             $('.header').removeClass("sticky");
