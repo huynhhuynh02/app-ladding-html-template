@@ -25,22 +25,25 @@
                         <nav class="navbar navbar-expand-lg navbar-custom">
                            <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home</a>
+                                    <a class="nav-link" href="#">Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About us</a>
+                                    <a class="nav-link" href="#">Về chúng tôi</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Service</a>
+                                    <a class="nav-link" href="#">Dịch vụ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Products</a>
+                                    <a class="nav-link" href="#">Sản phẩm</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact us</a>
+                                    <a class="nav-link" href="#">Liên hệ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-primary" href="#">034 422 6514</a>
                                 </li>
                             </ul> 
                         </nav>
@@ -288,6 +291,46 @@
                                 <p class="position">Designer</p>
                             </div>
                         </div>
+                        <div class="card-testimonial-item d-flex">
+                            <div class="author-img">
+                                <img src="images/02.png" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore etiam processus 
+                                </p>
+                                <h6 class="name">John Bordir</h6>
+                                <p class="position">Designer</p>
+                            </div>
+                        </div>
+                        <div class="card-testimonial-item d-flex">
+                            <div class="author-img">
+                                <img src="images/02.png" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore etiam processus 
+                                </p>
+                                <h6 class="name">John Bordir</h6>
+                                <p class="position">Designer</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -299,6 +342,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/wow-js/wow.min.js"></script>
     <script src="vendor/owl-carousel/owl.carousel.js"></script>
+    <script src="js/sticky-menu.js"></script>
     <script>
         $(document).ready(function(){
             $(".owl-carousel").owlCarousel(
@@ -306,6 +350,7 @@
                     items:2,
                     lazyLoad: true,
                     margin:30,
+                    nav:false,
                     responsive:{
                         0:{
                             items:1,
@@ -317,7 +362,7 @@
                         },
                         1000:{
                             items:2,
-                            nav:true,
+                            nav:false,
                             loop:false
                         }
                     }
