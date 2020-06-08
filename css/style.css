@@ -13,7 +13,7 @@ html {
 }
 .header.sticky{
     position: fixed;
-    padding:20px;
+    padding:15px;
     background: #fff;
     z-index: 1000;
     box-shadow:0 8px 20px 0 rgba(0,0,0,.1);
@@ -211,6 +211,14 @@ html {
 .bg-ash-color{
     background: #f8fbff;
 }
+.button{
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.button.button-primary-color{
+    display: inline-block;
+    background: linear-gradient(to top right,#5049ad,#7b4cdb);
+}
 .owl-nav{
     position: absolute;
     left: 0;
@@ -241,8 +249,8 @@ html {
     height: 10px;
 }
 .owl-dots .owl-dot.active{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background: #5049ad !important;
 }
 .position-relative{
@@ -250,9 +258,34 @@ html {
 }
 
 /* css Blog section home */
+.section-blog .blog-item .blog-thumbnail{
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
 .section-blog .blog-item .blog-content{
     padding: 20px 20px;
+    position: relative;
 }
-.section-blog .blog-item .blog-content .blog-info{
-    display:flex;
+.section-blog .blog-item:hover img{
+    transform: scale(1.2) rotate(10deg);
+}
+.section-blog .blog-item .blog-content::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left:0;
+    width: 50%;
+    height: 3px;
+    background: #5049ad;
+    transition: all 0.5s linear;
+}
+.section-blog .blog-item:hover .blog-content::after{
+    width: 100%;
+}
+.section-blog .blog-item .blog-content .blog-title{
+    font-size: 25px;
+    text-decoration: none;
+}
+.footer{
+    background: #f1f5fb;
 }
